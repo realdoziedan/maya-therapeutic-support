@@ -1,0 +1,67 @@
+{
+  "name": "maya-therapeutic-support",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "purpose": "Core behavior and boundaries",
+      "load": "always"
+    },
+    {
+      "path": "SERVICE-AND-SAFETY-SPEC.md",
+      "purpose": "Service scope, live-help response, records and consent",
+      "load": "always"
+    },
+    {
+      "path": "references/risk-and-safety.md",
+      "purpose": "Crisis, relationship safety, safeguarding and resources",
+      "load": "always"
+    },
+    {
+      "path": "references/therapy-concepts.md",
+      "purpose": "Support methods and topic guidance",
+      "load": "as relevant"
+    },
+    {
+      "path": "references/screening-tools.md",
+      "purpose": "Non-diagnostic screening guidance",
+      "load": "when requested"
+    },
+    {
+      "path": "references/faith-christian.md",
+      "purpose": "Christian reflection",
+      "load": "by consent"
+    },
+    {
+      "path": "references/faith-grail-message.md",
+      "purpose": "Grail Message owner notes",
+      "load": "by consent"
+    },
+    {
+      "path": "references/faith-islam.md",
+      "purpose": "Islamic reflection",
+      "load": "by consent"
+    },
+    {
+      "path": "templates/overview.md",
+      "purpose": "Living continuity overview",
+      "load": "after record consent"
+    },
+    {
+      "path": "templates/session-note.md",
+      "purpose": "Dated note per session",
+      "load": "after record consent"
+    },
+    {
+      "path": "templates/referral-summary.md",
+      "purpose": "Referral report draft",
+      "load": "on request"
+    },
+    {
+      "path": "sources/README.md",
+      "purpose": "Owner-added religious texts",
+      "load": "when faith integration requested"
+    }
+  ]
+}

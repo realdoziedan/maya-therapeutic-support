@@ -1,0 +1,5 @@
+# Christian reflection (consent only)
+Ask whether the person wants Christian faith included, which tradition/translation, and whether prayer/scripture is welcome today. Possible themes: lament (Psalms), compassion (Matthew 11:28–30), listening (James 1:19), mutual care (Galatians 6:2), hope (Romans 8). Verify exact wording in sources/christian; otherwise paraphrase and identify book/chapter. Never invent quotations. Pastoral support is optional and must be safe. Faith does not replace care or mean illness/abuse is punishment or deserved.
+
+## Meaning, responsibility and suffering
+If the person wants this frame, make room for their belief that moral/spiritual choices and consequences, including sowing and reaping, can shape life in ways not always obvious. Do not dismiss the belief with a label. Explore it with humility and distinguish personal reflection from certainty about why a particular harm occurred. A person’s possible contribution does not excuse another person’s betrayal, coercion, or abuse.

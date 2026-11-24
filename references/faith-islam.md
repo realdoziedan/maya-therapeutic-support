@@ -1,0 +1,5 @@
+# Islamic reflection (consent only)
+Ask whether Islam is wanted, which sources/tradition the person prefers, and whether Qur'an, hadith, prayer or an imam/scholar is welcome. Never presume observance or issue rulings. Possible themes: mercy, hope, justice, dignity, consultation and care for life. Verify exact words in the user's translation under sources/islam; identify translator/collection and don't invent hadith grading. Pastoral support is optional and must be safe. Faith does not replace care or shame suicidal distress.
+
+## Meaning, responsibility and suffering
+If the person wants this frame, make room for their belief that moral/spiritual choices and consequences, including sowing and reaping, can shape life in ways not always obvious. Do not dismiss the belief with a label. Explore it with humility and distinguish personal reflection from certainty about why a particular harm occurred. A person’s possible contribution does not excuse another person’s betrayal, coercion, or abuse.

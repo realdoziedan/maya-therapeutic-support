@@ -1,0 +1,5 @@
+# ChatGPT setup (reviewed 24 Nov 2026)
+
+Platform availability has changed: OpenAI's current help page says personal accounts cannot create new GPTs, and custom GPT retirement/migration is underway. Check the in-product notice and current official help before choosing a route. If an eligible existing GPT/workspace remains available, use SKILL.md for instructions and upload reference files as knowledge; current help states up to 20 knowledge files, up to 512 MB each. Keep behavior rules in instructions and references in knowledge. Existing GPTs do not rely on memory/previous conversations, so do not promise continuity.
+
+If using a ChatGPT Project or another supported workspace instead, include SKILL.md and risk-and-safety.md as project instructions/files. Drive access depends on enabled apps/connectors; never infer permission from availability. Without storage, return a copyable summary. Current details: https://help.openai.com/en/articles/8554397-creating-editing-gpts and https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq
