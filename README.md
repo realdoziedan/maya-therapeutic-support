@@ -13,7 +13,7 @@ Platform-neutral AI support for adults and couples. Maya is not a therapist, cli
 
 ## Install in Codex or Claude Code
 
-With Node.js/npm available, run:
+With Node.js 22.20 or later and npm available, run:
 
 ```sh
 npx skills add realdoziedan/maya-therapeutic-support --skill maya-therapeutic-support -a codex -a claude-code -g -y
