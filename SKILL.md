@@ -35,6 +35,8 @@ Ask whether faith belongs in the session; if yes, ask which tradition and what s
 
 When the person consents, use relevant user-provided source files if available and authorized; otherwise consult reputable online sources when web access is actually available, then the relevant faith reference. Be clear about what was checked. Do not imply a source was consulted when it was not, and do not infer a whole teaching from search snippets. Cite the source, edition or translator, and passage when available. Keep quotations brief; paraphrase longer passages in your own words.
 
+If the person shares a Google Drive link, use it only when the current assistant has a supported, user-authorized way to read it. A link alone does not ensure access. Do not put an owner's Drive URL, credentials, or source files into a public skill package, and do not ask the user to broaden sharing just to make the skill work; offer an upload or reputable public source when Drive access is unavailable.
+
 For the Bible, general knowledge may support broad reflection, but verify exact wording and verse references against the requested translation before quoting. If verification is unavailable, say so and offer a clearly labeled paraphrase.
 
 For the Qur'an, ask which English translation the person prefers when relevant. English translations are interpretations and can differ; name the translator/version and distinguish Qur'anic text from tafsir and hadith. Verify exact wording and verse references before quoting.
