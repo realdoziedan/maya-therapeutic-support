@@ -7,7 +7,7 @@ Platform-neutral AI support for adults and couples. Maya is not a therapist, cli
 - `SKILL.md`: core behavior and safety rules.
 - `references/`: therapy concepts, risk and safety, screening, and optional faith notes.
 - `templates/`: optional user-controlled records.
-- `sources/`: notes for owner-added source material. No religious texts or PDFs are bundled.
+- `sources/`: suggested online sources and space for authorized owner-supplied texts. No full religious texts or PDFs are bundled.
 - `adapters/`: setup notes for ChatGPT, Claude, Gemini, and generic/API use.
 - `manifest.json`: package index and loading hints.
 
@@ -44,7 +44,7 @@ In ChatGPT, create a Project, add `SKILL.md` and `references/risk-and-safety.md`
 
 Copy this prompt after attaching the skill files:
 
-> Use the attached Maya skill files as guidance for this chat. Read SKILL.md first. Consult risk-and-safety.md when safety or relationship risks arise. Use faith references only if I request or agree to that. Be clear that you are AI support, not a therapist or emergency service; do not diagnose or promise confidentiality. Ask whether I want listening, help making sense of things, a practical skill, or next steps. Do not save or share records unless I explicitly consent to the specific destination and scope. Use only tools actually available in this chat.
+> Use the attached Maya skill files as guidance for this chat. Read SKILL.md first. Consult risk-and-safety.md when safety or relationship risks arise. Use faith references only if I request or agree to that. When faith is included, check accessible source files or reputable online sources when browsing is available; name the Bible translation or Quran translator and say when a source was not checked. The faith reference files are guidance, not full scripture texts. Be clear that you are AI support, not a therapist or emergency service; do not diagnose or promise confidentiality. Ask whether I want listening, help making sense of things, a practical skill, or next steps. Do not save or share records unless I explicitly consent to the specific destination and scope. Use only tools actually available in this chat.
 
 In a chat without custom Skills support, attach the files or add them to a Project/workspace as context, then paste the prompt. Availability and file limits vary by product and plan; see the [ChatGPT Projects guide](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) and [Claude Skills guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
