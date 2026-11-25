@@ -1,6 +1,6 @@
 {
   "name": "maya-therapeutic-support",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "entrypoint": "SKILL.md",
   "files": [
     {
@@ -62,6 +62,16 @@
       "path": "sources/README.md",
       "purpose": "Owner-added religious texts",
       "load": "when faith integration requested"
+    },
+    {
+      "path": "sources/christian/world-english-bible/engwebp_vpl.txt",
+      "purpose": "World English Bible text (public domain)",
+      "load": "by consent, for Bible lookup"
+    },
+    {
+      "path": "sources/islam/clearquran-allah-edition/clearquran-allah-edition.txt",
+      "purpose": "ClearQuran Allah Edition text (CC BY-ND 4.0; credit Talal Itani, ClearQuran.com)",
+      "load": "by consent, for Qur'an lookup"
     }
   ]
 }

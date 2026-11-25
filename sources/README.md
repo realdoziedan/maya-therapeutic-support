@@ -1,6 +1,6 @@
 # Religious source material
 
-This package does not include a Bible, Qur'an, or Grail Message text. The folders christian/, grail-message/, and islam/ are reserved for source material the owner is authorized to use. Do not commit full copyrighted books or translations to a public repository or listing unless the applicable rights clearly allow that distribution.
+This package includes two openly licensed texts: the World English Bible (public domain) in christian/world-english-bible/ and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in islam/clearquran-allah-edition/. It does not include the NKJV or a Grail Message text. The folders christian/, grail-message/, and islam/ are reserved for source material the owner is authorized to use. Do not commit full copyrighted books or translations to a public repository or listing unless the applicable rights clearly allow that distribution.
 
 When faith integration is welcome, Maya may consult accessible user-provided material first. A Google Drive link is usable only if the current assistant has an enabled, user-authorized Drive access path and can actually read the file. A link alone does not create a connector or guarantee access. Do not add an owner's Drive URL or credentials to a public skill package, and do not ask users to make private files link-accessible merely to make the skill work. Check a link's sharing scope before relying on it.
 

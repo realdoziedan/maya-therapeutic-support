@@ -2,6 +2,10 @@
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
 
+## 1.2.0 — 2026-11-25
+- Bundled two openly licensed texts, unchanged, with their publishers' notices: the World English Bible (public domain, eBible.org) in `sources/christian/world-english-bible/` and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in `sources/islam/clearquran-allah-edition/`.
+- Updated the sources READMEs and links to record each text's edition, licence, credit line, and download date. The NKJV and Grail Message texts remain unbundled because their copyright does not allow redistribution.
+
 ## 1.1.0 — 2026-11-25
 - Added a single-file edition (`dist/maya-therapeutic-support-single.md`) for platforms that accept only one skill file. It bundles SKILL.md with the safety spec, references, sources notes, templates, and this changelog, unchanged.
 - Added `scripts/build_single_file.py` to regenerate the single file and a GitHub Action that rebuilds it on pushes to main.
