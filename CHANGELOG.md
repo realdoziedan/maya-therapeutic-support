@@ -2,6 +2,11 @@
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
 
+## 1.3.0 — 2026-11-25
+- Licensed the package under CC BY-NC 4.0 (`LICENSE`). Bundled scripture texts keep their own terms.
+- Rewrote the skill description in SKILL.md frontmatter to present Maya as an AI therapy tool (not a licensed therapist or emergency service) and to say when to use it.
+- README now opens with what Maya does and sample prompts, corrects the outdated note that no religious texts are bundled, and adds a License section.
+
 ## 1.2.0 — 2026-11-25
 - Bundled two openly licensed texts, unchanged, with their publishers' notices: the World English Bible (public domain, eBible.org) in `sources/christian/world-english-bible/` and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in `sources/islam/clearquran-allah-edition/`.
 - Updated the sources READMEs and links to record each text's edition, licence, credit line, and download date. The NKJV and Grail Message texts remain unbundled because their copyright does not allow redistribution.
