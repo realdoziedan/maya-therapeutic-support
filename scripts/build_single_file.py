@@ -4,6 +4,7 @@ files, concatenated unchanged, for platforms that accept only one skill file.
 
 Run from anywhere:  python scripts/build_single_file.py
 """
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -25,6 +26,7 @@ FILES = [
     "templates/overview.md",
     "templates/session-note.md",
     "templates/referral-summary.md",
+    "CHANGELOG.md",
 ]
 
 NOTE = (
@@ -40,7 +42,9 @@ def read(rel: str) -> str:
 
 
 def main() -> None:
-    parts = [read("SKILL.md"), NOTE]
+    version = json.loads(read("manifest.json"))["version"]
+    note = NOTE.replace("# Bundled reference files\n\n", f"# Bundled reference files\n\nVersion {version} (from manifest.json).\n\n", 1)
+    parts = [read("SKILL.md"), note]
     for rel in FILES:
         parts.append(f"\n\n---\n\n## File: {rel}\n\n")
         parts.append(read(rel))
