@@ -8,6 +8,8 @@ These links help locate sources; they do not guarantee that a specific text or e
 - Grail Message Foundation / publisher: https://us.grailmessage.com/ and https://grailmessage.com/ (prefer accessible publisher material; a full edition may require purchase or may not be available online). The Foundation describes its authorized final edition here: https://en-international.grailmessage.com/faq.
 - Grail Message lecture list: https://grailmessage.com/in-the-light-of-truth-grail-message-content/ (publisher's overview of the 168-lecture, three-volume structure).
 - Grail Message, “Fate”: https://en-international.grailmessage.com/in-the-light-of-truth-the-grail-message-volume-2-clothbound.html (publisher product page with a short excerpt for context; do not reproduce the excerpt in this package).
+- Bundled World English Bible text: https://ebible.org/Scriptures/engwebp_vpl.zip (public domain; plain-text verse-per-line edition, downloaded 25 Nov 2026). Master copy: https://ebible.org/web/.
+- Bundled ClearQuran Allah Edition text: https://d.clearquran.com/text/clearquran-txt-allah-edition.zip (CC BY-ND 4.0; publisher's Last Update October 9, 2026; downloaded 25 Nov 2026).
 
 Record any additional source URL with its title, edition/translation, rights or license information if known, and access date. Do not put private client records or owner-specific Drive URLs here.
 

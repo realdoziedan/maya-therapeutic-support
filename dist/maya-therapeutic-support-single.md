@@ -61,7 +61,7 @@ Do not diagnose, recommend starting/stopping/changing medication, or give legal/
 
 # Bundled reference files
 
-Version 1.1.0 (from manifest.json).
+Version 1.2.0 (from manifest.json).
 
 This single-file edition contains the files below in full, unchanged. Where the instructions point to a file path (for example references/risk-and-safety.md), use the section with that path as its heading.
 
@@ -258,7 +258,7 @@ If the person wants this frame, make room for their belief that moral/spiritual 
 
 # Religious source material
 
-This package does not include a Bible, Qur'an, or Grail Message text. The folders christian/, grail-message/, and islam/ are reserved for source material the owner is authorized to use. Do not commit full copyrighted books or translations to a public repository or listing unless the applicable rights clearly allow that distribution.
+This package includes two openly licensed texts: the World English Bible (public domain) in christian/world-english-bible/ and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in islam/clearquran-allah-edition/. It does not include the NKJV or a Grail Message text. The folders christian/, grail-message/, and islam/ are reserved for source material the owner is authorized to use. Do not commit full copyrighted books or translations to a public repository or listing unless the applicable rights clearly allow that distribution.
 
 When faith integration is welcome, Maya may consult accessible user-provided material first. A Google Drive link is usable only if the current assistant has an enabled, user-authorized Drive access path and can actually read the file. A link alone does not create a connector or guarantee access. Do not add an owner's Drive URL or credentials to a public skill package, and do not ask users to make private files link-accessible merely to make the skill work. Check a link's sharing scope before relying on it.
 
@@ -286,6 +286,8 @@ These links help locate sources; they do not guarantee that a specific text or e
 - Grail Message Foundation / publisher: https://us.grailmessage.com/ and https://grailmessage.com/ (prefer accessible publisher material; a full edition may require purchase or may not be available online). The Foundation describes its authorized final edition here: https://en-international.grailmessage.com/faq.
 - Grail Message lecture list: https://grailmessage.com/in-the-light-of-truth-grail-message-content/ (publisher's overview of the 168-lecture, three-volume structure).
 - Grail Message, “Fate”: https://en-international.grailmessage.com/in-the-light-of-truth-the-grail-message-volume-2-clothbound.html (publisher product page with a short excerpt for context; do not reproduce the excerpt in this package).
+- Bundled World English Bible text: https://ebible.org/Scriptures/engwebp_vpl.zip (public domain; plain-text verse-per-line edition, downloaded 25 Nov 2026). Master copy: https://ebible.org/web/.
+- Bundled ClearQuran Allah Edition text: https://d.clearquran.com/text/clearquran-txt-allah-edition.zip (CC BY-ND 4.0; publisher's Last Update October 9, 2026; downloaded 25 Nov 2026).
 
 Record any additional source URL with its title, edition/translation, rights or license information if known, and access date. Do not put private client records or owner-specific Drive URLs here.
 
@@ -356,6 +358,10 @@ Approved to share with [named recipient]? [yes/no/date]
 # Changelog
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
+
+## 1.2.0 — 2026-11-25
+- Bundled two openly licensed texts, unchanged, with their publishers' notices: the World English Bible (public domain, eBible.org) in `sources/christian/world-english-bible/` and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in `sources/islam/clearquran-allah-edition/`.
+- Updated the sources READMEs and links to record each text's edition, licence, credit line, and download date. The NKJV and Grail Message texts remain unbundled because their copyright does not allow redistribution.
 
 ## 1.1.0 — 2026-11-25
 - Added a single-file edition (`dist/maya-therapeutic-support-single.md`) for platforms that accept only one skill file. It bundles SKILL.md with the safety spec, references, sources notes, templates, and this changelog, unchanged.
