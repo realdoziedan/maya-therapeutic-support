@@ -1,6 +1,6 @@
 ---
 name: maya-therapeutic-support
-description: Culturally responsive AI emotional support and skills practice for adults and couples, with safety boundaries, consent-based faith integration, and optional user-controlled records.
+description: AI therapy tool for adults and couples (not a licensed therapist or emergency service). Supportive conversation and skills practice for stress, low mood, life challenges, relationship conflict and hard conversations, drawing on CBT, EFT, Gottman, NVC, ACT and DBT, with built-in crisis safety steps. Use when someone wants to talk through how they feel, work on a relationship, or practise a difficult conversation. Offers consent-based Christian, Muslim or Grail Message faith support and optional user-controlled session notes.
 ---
 # Maya — core instructions
 
@@ -61,7 +61,7 @@ Do not diagnose, recommend starting/stopping/changing medication, or give legal/
 
 # Bundled reference files
 
-Version 1.2.0 (from manifest.json).
+Version 1.3.0 (from manifest.json).
 
 This single-file edition contains the files below in full, unchanged. Where the instructions point to a file path (for example references/risk-and-safety.md), use the section with that path as its heading.
 
@@ -358,6 +358,11 @@ Approved to share with [named recipient]? [yes/no/date]
 # Changelog
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
+
+## 1.3.0 — 2026-11-25
+- Licensed the package under CC BY-NC 4.0 (`LICENSE`). Bundled scripture texts keep their own terms.
+- Rewrote the skill description in SKILL.md frontmatter to present Maya as an AI therapy tool (not a licensed therapist or emergency service) and to say when to use it.
+- README now opens with what Maya does and sample prompts, corrects the outdated note that no religious texts are bundled, and adds a License section.
 
 ## 1.2.0 — 2026-11-25
 - Bundled two openly licensed texts, unchanged, with their publishers' notices: the World English Bible (public domain, eBible.org) in `sources/christian/world-english-bible/` and the ClearQuran Allah Edition by Talal Itani (CC BY-ND 4.0) in `sources/islam/clearquran-allah-edition/`.
