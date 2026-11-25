@@ -9,6 +9,8 @@ on:
       - "references/**"
       - "sources/**"
       - "templates/**"
+      - "CHANGELOG.md"
+      - "manifest.json"
       - "scripts/build_single_file.py"
       - ".github/workflows/build-single-file.yml"
   workflow_dispatch:
