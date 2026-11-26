@@ -2,6 +2,9 @@
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
 
+## Unreleased
+- Added a Gemini Gem kit (`dist/maya-gemini-gem.zip`): nine Gemini-supported files that keep the package structure within Gemini's 10-file limit, with setup instructions. `scripts/build_gemini_kit.py` builds it and the GitHub Action rebuilds it with the single file. Skill content is unchanged.
+
 ## 1.3.0 — 2026-11-25
 - Licensed the package under CC BY-NC 4.0 (`LICENSE`). Bundled scripture texts keep their own terms.
 - Rewrote the skill description in SKILL.md frontmatter to present Maya as an AI therapy tool (not a licensed therapist or emergency service) and to say when to use it.

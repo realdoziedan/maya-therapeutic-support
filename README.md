@@ -34,6 +34,7 @@ Platform-neutral AI support for adults and couples. Maya is not a therapist, cli
 - `sources/`: the World English Bible (public domain) and the ClearQuran Allah Edition (CC BY-ND 4.0) as plain text, suggested online sources, and space for authorized owner-supplied texts. No religious PDFs, NKJV or Grail Message texts are bundled.
 - `adapters/`: setup notes for ChatGPT, Claude, Gemini, and generic/API use.
 - `manifest.json`: package index and loading hints.
+- `dist/`: ready-made editions, rebuilt automatically on every change: `maya-therapeutic-support-single.md` (one file, for platforms that accept a single file) and `maya-gemini-gem.zip` (a 9-file Gemini Gem kit with setup instructions).
 
 ## Install in Codex or Claude Code
 
