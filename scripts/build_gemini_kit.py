@@ -18,6 +18,12 @@ def read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
 
 
+def select_books(rel, books):
+    """Whole-verse lines from a verse-per-line Bible file, for the given book codes, unchanged."""
+    lines = read(rel).splitlines(keepends=True)
+    return "".join(l for l in lines if l.split(" ", 1)[0] in books)
+
+
 def bundle(paths):
     return "\n\n---\n\n".join(f"## File: {p}\n\n{read(p)}" for p in paths)
 
@@ -26,10 +32,19 @@ def build(kit_name, layout, instructions):
     """layout: {kit path: source path (copy) or list of source paths (group)}"""
     assert len(layout) <= 10, "Gemini Gems accept at most 10 knowledge files"
     files = {}
+    selections = {}
     for dest, src in layout.items():
-        files[f"{kit_name}/{dest}"] = bundle(src) if isinstance(src, list) else read(src)
+        if isinstance(src, tuple):  # (path, book codes): a verse selection
+            files[f"{kit_name}/{dest}"] = select_books(*src)
+            selections[dest] = src
+        else:
+            files[f"{kit_name}/{dest}"] = bundle(src) if isinstance(src, list) else read(src)
+    for dest, (rel, books) in selections.items():
+        full = read(rel).splitlines(keepends=True)
+        kept = files[f"{kit_name}/{dest}"].splitlines(keepends=True)
+        assert kept == [l for l in full if l.split(" ", 1)[0] in books], f"{dest} is not an unchanged selection"
     blob = "".join(files.values())
-    sources = [s for v in layout.values() for s in (v if isinstance(v, list) else [v])]
+    sources = [s for v in layout.values() if not isinstance(v, tuple) for s in (v if isinstance(v, list) else [v])]
     for s in sources:
         assert read(s) in blob, f"{s} not included verbatim"
     DIST.mkdir(exist_ok=True)
@@ -55,10 +70,16 @@ You are Maya. Your knowledge files are a structured copy of the Maya skill packa
 - references/faith-christian.md, faith-grail-message.md and faith-islam.md are sections headed "## File: <path>" inside references/faith-references.md.
 - sources/README.md, sources/links.md, the templates/ files and CHANGELOG.md are sections headed "## File: <path>" inside sources-templates-changelog.md.
 
-Use sources/world-english-bible.txt and sources/clearquran-allah-edition.txt only when the person asks for or agrees to faith support. Name the translation when quoting. When quoting the Qur'an, keep the wording unchanged and credit: "Translation by Talal Itani, ClearQuran.com."
+Use sources/world-english-bible-nt-psalms-proverbs.txt and sources/clearquran-allah-edition.txt only when the person asks for or agrees to faith support. Name the translation when quoting. The Bible file holds the World English Bible New Testament, Psalms and Proverbs (the full Bible is too large for a Gem). For any other book, check the exact wording against the World English Bible at https://ebible.org/web/ before quoting; if you cannot check it, say so and offer a clearly labelled paraphrase. When quoting the Qur'an, keep the wording unchanged and credit: "Translation by Talal Itani, ClearQuran.com."
 
 Be clear that you are an AI therapy tool, not a licensed therapist or emergency service.
 """
+
+NT_BOOKS = [
+    "MAT", "MAR", "LUK", "JOH", "ACT", "ROM", "1CO", "2CO", "GAL", "EPH", "PHI",
+    "COL", "1TH", "2TH", "1TI", "2TI", "TIT", "PHM", "HEB", "JAM", "1PE", "2PE",
+    "1JO", "2JO", "3JO", "JUD", "REV",
+]
 
 LAYOUT = {
     "SKILL.md": "SKILL.md",
@@ -79,7 +100,12 @@ LAYOUT = {
         "templates/referral-summary.md",
         "CHANGELOG.md",
     ],
-    "sources/world-english-bible.txt": "sources/christian/world-english-bible/engwebp_vpl.txt",
+    # The full Bible (~1.1M tokens) is larger than Gemini's context window, so the
+    # Gem gets an unchanged selection: the New Testament, Psalms and Proverbs.
+    "sources/world-english-bible-nt-psalms-proverbs.txt": (
+        "sources/christian/world-english-bible/engwebp_vpl.txt",
+        set(NT_BOOKS) | {"PSA", "PRO"},
+    ),
     "sources/clearquran-allah-edition.txt": "sources/islam/clearquran-allah-edition/clearquran-allah-edition.txt",
 }
 
