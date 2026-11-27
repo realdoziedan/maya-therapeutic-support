@@ -363,7 +363,7 @@ Versions follow semantic versioning: major for incompatible behavior or structur
 - Added a Gemini Gem kit (`dist/maya-gemini-gem.zip`): nine Gemini-supported files that keep the package structure within Gemini's 10-file limit, with setup instructions. `scripts/build_gemini_kit.py` builds it and the GitHub Action rebuilds it with the single file. Skill content is unchanged.
 - The Gemini kit carries the World English Bible New Testament, Psalms and Proverbs (unchanged verses) instead of the full Bible, which at about 1.1 million tokens exceeds Gemini's context window and fails to upload. For other books the Gem checks wording at ebible.org.
 - The Gem instructions now include the full SKILL.md, unchanged, because Gems apply Instructions on every turn but only look up Knowledge files as needed.
-- SKILL.md is no longer uploaded as Gem Knowledge, since the Instructions contain it in full.
+- SKILL.md stays in the Gem kit; the setup steps say to skip it if Gemini rejects it, since the Instructions contain it in full.
 
 ## 1.3.0 — 2026-11-25
 - Licensed the package under CC BY-NC 4.0 (`LICENSE`). Bundled scripture texts keep their own terms.
