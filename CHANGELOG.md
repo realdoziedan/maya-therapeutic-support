@@ -2,7 +2,8 @@
 
 Versions follow semantic versioning: major for incompatible behavior or structure, minor for backward-compatible capability, patch for corrections. Entries are drawn from the repository's commit history.
 
-## Unreleased
+## 1.4.0 — 2026-11-27
+- Added "Opening a session" to SKILL.md: mutual introductions with the AI-tool disclosure, individual or couples session (with a private check-in for each partner before joint work), what the person wants to talk about, whether faith should be part of the session, and whether they want continuity with consent to stored records. Distress or risk in the first message takes priority over intake; returning users get a one-line recap.
 - Added a Gemini Gem kit (`dist/maya-gemini-gem.zip`): nine Gemini-supported files that keep the package structure within Gemini's 10-file limit, with setup instructions. `scripts/build_gemini_kit.py` builds it and the GitHub Action rebuilds it with the single file. Skill content is unchanged.
 - The Gemini kit carries the World English Bible New Testament, Psalms and Proverbs (unchanged verses) instead of the full Bible, which at about 1.1 million tokens exceeds Gemini's context window and fails to upload. For other books the Gem checks wording at ebible.org.
 - The Gem instructions now include the full SKILL.md, unchanged, because Gems apply Instructions on every turn but only look up Knowledge files as needed.
